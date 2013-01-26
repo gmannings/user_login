@@ -1,0 +1,151 @@
+<?php
+
+/**
+ * Implements hook_username_alter
+ * Alter the username that is displayed for a user.
+ */
+function user_login_username_alter(&$name, $account){
+    drupal_set_message( t('Your username has changed to ' . $name) );
+}
+
+/**
+ * Implements hook_user_cancel
+ * Act on user account cancellations.
+ */
+function user_login_user_cancel($edit, $account, $method){
+    
+}
+
+/**
+ * Implements hook_cancel_methods_alter
+ * Modify account cancellation methods. 
+ */
+function user_login_user_cancel_methods_alter(){
+    
+}
+
+/**
+ * Implements hook_user_categories
+ * Retrieve a list of user setting or profile information categories. 
+ */
+function user_login_user_categories(){
+    
+}
+
+/**
+ * Implements hook_user_delete
+ * Respond to user deletion. 
+ */
+function user_login_user_delete(){
+    
+}
+
+/**
+ * Implements hook_user_insert
+ * A user account was created.
+ */
+function user_login_user_insert(){
+    
+}
+
+/**
+ * Implements hook_user_load
+ * Act on user objects when loaded from the database.
+ */
+function user_login_user_load(){
+    
+}
+
+/**
+* Implements hook_user_login
+ * 
+ * When a user logs in, the same credentials are available through the
+ * $account variable.
+ * 
+*/
+function user_login_user_login(&$edit, $account) {
+    drupal_set_message( t('Welcome ') . $account->name  );
+}
+
+/**
+* Implements hook_user_logout
+ * 
+ * When a user logs out, this hook is run as part of the logoff script
+ * 
+*/
+function user_login_user_logout($account){
+    // Note: all session info is destroyed after the user is successfully logged
+    // out. No information logged to drupal_set_message() is saved here
+}
+
+/**
+ * Implements hook_user_operations
+ * Add mass user operations. 
+ */
+function user_login_user_operations(){
+    
+}
+
+/**
+ * Implements hook_user_presave
+ * A user account is about to be created or updated. 
+ */
+function user_login_user_presave(){
+    
+}
+
+/**
+ * Implements hook_user_role_delete
+ * Inform other modules that a user role has been deleted. 
+ */
+function user_login_user_role_delete(){
+    
+}
+
+/**
+ * Implements hook_user_role_insert
+ * Inform other modules that a user role has been added. 
+ */
+function user_login_user_role_insert(){
+    
+}
+
+/**
+ * Implements hook_user_role_presave
+ * Inform other modules that a user role is about to be saved. 
+ */
+function user_login_user_role_presave(){
+    
+}
+
+/**
+ * Implements hook_user_role_update
+ * Inform other modules that a user role has been updated. 
+ */
+function user_login_user_role_update(){
+    
+}
+
+/**
+ * Implements hook_user_update
+ * A user account was updated. 
+ */
+function user_login_user_update(){
+    
+}
+
+/**
+ * Implements hook_user_view
+ * The user's account information is being displayed. 
+ */
+function user_login_user_view(){
+    
+}
+
+/**
+ * Implements hook_user_view_alter
+ * The user was built; the module may modify the structured content. 
+ */
+function user_login_user_view_alter(){
+    
+}
